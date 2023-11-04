@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Basepage.Numbers">
+        <methods>
+          <include name="LauchApplication"/>
+          <include name="Signupwithphonenumbers"/>
+          <include name="LauchBrowser"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Basepage.Numbers -->
+      <class name="Basepage.Signup">
+        <methods>
+          <include name="LauchApplication"/>
+          <include name="LauchBrowser"/>
+          <include name="close"/>
+          <include name="page"/>
+        </methods>
+      </class> <!-- Basepage.Signup -->
+      <class name="Basepage.Loginwithnumbers">
+        <methods>
+          <include name="LauchApplication"/>
+          <include name="LauchBrowser"/>
+          <include name="close"/>
+          <include name="Invalidcredentials"/>
+        </methods>
+      </class> <!-- Basepage.Loginwithnumbers -->
+      <class name="Basepage.Login1">
+        <methods>
+          <include name="logindata"/>
+          <include name="LauchApplication"/>
+          <include name="LauchBrowser"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Basepage.Login1 -->
+      <class name="Basepage.Signup1">
+        <methods>
+          <include name="LauchApplication"/>
+          <include name="LauchBrowser"/>
+          <include name="Uniqesignupdata"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Basepage.Signup1 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
